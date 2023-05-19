@@ -48,6 +48,8 @@
 
 我只是对资源进行了整合，非常感谢相关源码作者的付出
 
+[需要海外服务器的，请移步](https://www.xwhoo.info)
+
 ## 参考
 
 - [stilleshan/dockerfiles/tree/main/sub](https://github.com/stilleshan/dockerfiles/tree/main/sub)
