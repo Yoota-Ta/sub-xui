@@ -52,5 +52,5 @@
 
 - [stilleshan/dockerfiles/tree/main/sub](https://github.com/stilleshan/dockerfiles/tree/main/sub)
 - [stilleshan/subweb](https://github.com/stilleshan/subweb)
-- [stilleshan/subconverter]([dockerfiles/sub at main · stilleshan/dockerfiles · GitHub](https://github.com/stilleshan/dockerfiles/tree/main/sub))
+- [stilleshan/subconverter](https://github.com/stilleshan/dockerfiles/tree/main/sub)
 - [vaxilu](https://github.com/vaxilu)
