@@ -2,7 +2,7 @@
 
 ---
 
-部署基于[stilleshan/dockerfiles/tree/main/sub](https://github.com/stilleshan/dockerfiles/tree/main/sub)修改的，添加了`x-ui`
+部署基于[stilleshan/dockerfiles/tree/main/sub](https://github.com/stilleshan/dockerfiles/tree/main/sub)修改的，增加了`x-ui`
 
 ### 操作步骤
 
