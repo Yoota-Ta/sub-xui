@@ -12,7 +12,7 @@
    curl -fsSL https://get.docker.com | sh
    ```
 
-   
+   - 
 
 2. 下载拷贝目录至服务器,然后在服务器该根目录下执行
 
@@ -21,6 +21,14 @@
    ```
 
 ![](./img/06.png)
+
+- ​	如果执行报错，或者异常，执行
+
+  ```
+  service docker restart
+  ```
+
+  
 
 ### 配置反向代理
 

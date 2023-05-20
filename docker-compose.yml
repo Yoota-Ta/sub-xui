@@ -1,17 +1,5 @@
-version: "3.3"
+version: "3.9"
 services:
-
-  xui:
-    image: enwaiax/x-ui
-    container_name: xui
-    ports:
-      - "54321:54321"
-    volumes:
-      - $PWD/db/:/etc/x-ui/
-      - $PWD/cert/:/root/cert/
-    restart: unless-stopped
-    network_mode: host
-
   subconverter:
     image: stilleshan/sub
     container_name: sub
@@ -20,6 +8,8 @@ services:
     volumes:
       - ./conf:/usr/share/nginx/html/conf
     restart: always
+    networks:
+      - v2r
 
   myurls:
     image: stilleshan/myurls:latest
@@ -34,6 +24,8 @@ services:
     depends_on:
       - redis
     restart: always
+    networks:
+      - v2r
 
   redis:
     image: redis:latest
@@ -41,3 +33,19 @@ services:
     volumes:
       - ./data/redis:/data
     restart: always
+    networks:
+      - v2r
+  xui:
+    image: enwaiax/x-ui
+    container_name: xui
+    ports:
+      - "54321:54321"
+    volumes:
+      - ./db/:/etc/x-ui/
+      - ./cert/:/root/cert/
+    restart: always
+    network_mode: host
+
+networks:
+  v2r:
+    driver: bridge
