@@ -48,7 +48,7 @@
 
 ### 推荐
 
-- [需要服务器的，请关注](https://www.xwhoo.info)
+- [需要服务器的，欢迎关注](https://www.xwhoo.info)
 
 - [域名注册](https://www.godaddy.com/)
 
