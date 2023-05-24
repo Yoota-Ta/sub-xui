@@ -1,40 +1,5 @@
 version: "3.9"
 services:
-  subconverter:
-    image: stilleshan/sub
-    container_name: sub
-    ports:
-      - 18080:80
-    volumes:
-      - ./conf:/usr/share/nginx/html/conf
-    restart: always
-    networks:
-      - v2r
-
-  myurls:
-    image: stilleshan/myurls:latest
-    # container_name: myurls
-    environment:
-      - MYURLS_DOMAIN=s.ops.ci
-      - MYURLS_TTL=365
-    volumes:
-      - ./data/myurls/logs:/app/logs    
-    ports:
-      - "8002:8002"
-    depends_on:
-      - redis
-    restart: always
-    networks:
-      - v2r
-
-  redis:
-    image: redis:latest
-    # container_name: myurls-redis
-    volumes:
-      - ./data/redis:/data
-    restart: always
-    networks:
-      - v2r
   xui:
     image: enwaiax/x-ui
     container_name: xui
@@ -45,6 +10,32 @@ services:
       - ./cert/:/root/cert/
     restart: always
     network_mode: host
+
+  subconverter:
+    image: stilleshan/sub
+    container_name: sub
+    volumes:
+      - ./conf:/usr/share/nginx/html/conf
+    restart: always
+    networks:
+      - v2r
+
+  myurls:
+    image: stilleshan/myurls:latest
+    depends_on:
+      - redis
+    restart: always
+    networks:
+      - v2r
+
+  redis:
+    image: redis:latest
+    volumes:
+      - ./data/redis:/data
+    restart: always
+    networks:
+      - v2r
+
 
 networks:
   v2r:
