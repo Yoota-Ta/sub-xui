@@ -1,64 +1,72 @@
-## 搭建梯子节点以及节点 订阅
+- ## 搭建梯子节点以及节点 订阅
 
----
+  ---
 
-部署基于[stilleshan/dockerfiles/tree/main/sub](https://github.com/stilleshan/dockerfiles/tree/main/sub)修改的，增加了`x-ui`
+  部署基于[stilleshan/dockerfiles/tree/main/sub](https://github.com/stilleshan/dockerfiles/tree/main/sub)修改的，增加了`x-ui`，部署基于宝塔面板
 
-### 操作步骤
+  ### 操作步骤
 
-1. 安装docker 
+  1. git clone 
 
-   ```
-   curl -fsSL https://get.docker.com | sh
-   ```
+     ```
+     git clone https://github.com/Yoota-Ta/sub-xui.git
+     ```
 
-   
+     
 
-2. 下载拷贝目录至服务器,然后在服务器该根目录下执行
+  2. 安装docker 需要docker-compose
 
-   ```
-   docker-compose up -d
-   ```
+     ```
+     curl -fsSL https://get.docker.com | sh
+     ```
 
-![](./img/06.png)
+     ![](./img/07.png)
 
-### 配置反向代理
+  3. 下载拷贝目录至服务器,然后在服务器该根目录下执行
 
-![](./img/02.png)
+     ```
+     docker-compose up -d
+     ```
 
+  ![](F:\下载\sub-xui_RjcRJr\img\06.png)
 
+  ### 配置反向代理
 
-![](./img/03.png)
+  ![](F:\下载\sub-xui_RjcRJr\img\02.png)
 
-### 相关设置
+  
 
-#### 节点配置 
+  ![](F:\下载\sub-xui_RjcRJr\img\03.png)
 
-登录节点的地址， 默认账号admin ，密码是 admin 
+  ### 相关设置
 
-![](./img/04.png)
+  #### 节点配置 
 
-### 订阅转换
+  登录节点的地址， 默认账号admin ，密码是 admin 
 
-拷贝上一步生成的节点去生成订阅转换 
+  ![](F:\下载\sub-xui_RjcRJr\img\04.png)
 
-![](./img/05.png)
+  ### 订阅转换
 
+  拷贝上一步生成的节点去生成订阅转换 
 
+  ![](F:\下载\sub-xui_RjcRJr\img\05.png)
 
-### 推荐
+  
 
-- [需要服务器的，欢迎关注](https://www.xwhoo.info)
+  ### 推荐
 
-- [域名注册](https://www.godaddy.com/)
+  - [需要服务器的，欢迎关注](https://www.xwhoo.info)
 
+  - [域名注册](https://www.godaddy.com/)
 
+  
 
-我只是对资源进行了整合，非常感谢相关源码作者的付出
+  我只是对资源进行了整合，非常感谢相关源码作者的付出
 
-## 参考
+  ## 参考
 
-- [stilleshan/dockerfiles/tree/main/sub](https://github.com/stilleshan/dockerfiles/tree/main/sub)
-- [stilleshan/subweb](https://github.com/stilleshan/subweb)
-- [stilleshan/subconverter](https://github.com/stilleshan/dockerfiles/tree/main/sub)
-- [vaxilu](https://github.com/vaxilu)
+  - [stilleshan/dockerfiles/tree/main/sub](https://github.com/stilleshan/dockerfiles/tree/main/sub)
+  - [stilleshan/subweb](https://github.com/stilleshan/subweb)
+  - [stilleshan/subconverter](https://github.com/stilleshan/dockerfiles/tree/main/sub)
+  - [vaxilu](https://github.com/vaxilu)
