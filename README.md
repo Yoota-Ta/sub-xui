@@ -30,6 +30,16 @@
 
   ![](F:\下载\sub-xui_RjcRJr\img\06.png)
 
+  
+
+  ### 命令有问题，可以重启docker
+
+  ```
+  sudo systemctl restart docker
+  ```
+
+  
+
   ### 配置反向代理
 
   ![](F:\下载\sub-xui_RjcRJr\img\02.png)
@@ -57,15 +67,15 @@
   ### 推荐
 
   - [需要服务器的，欢迎关注](https://www.xwhoo.info)
-
-  - [域名注册](https://www.godaddy.com/)
-
   
-
+  - [域名注册](https://www.godaddy.com/)
+  
+  
+  
   我只是对资源进行了整合，非常感谢相关源码作者的付出
-
+  
   ## 参考
-
+  
   - [stilleshan/dockerfiles/tree/main/sub](https://github.com/stilleshan/dockerfiles/tree/main/sub)
   - [stilleshan/subweb](https://github.com/stilleshan/subweb)
   - [stilleshan/subconverter](https://github.com/stilleshan/dockerfiles/tree/main/sub)
