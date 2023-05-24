@@ -28,7 +28,7 @@
      docker-compose up -d
      ```
 
-  ![](F:\下载\sub-xui_RjcRJr\img\06.png)
+  ![](./img/06.png)
 
   
 
@@ -42,11 +42,11 @@
 
   ### 配置反向代理
 
-  ![](F:\下载\sub-xui_RjcRJr\img\02.png)
+  ![](./img/02.png)
 
   
 
-  ![](F:\下载\sub-xui_RjcRJr\img\03.png)
+  ![](./img/03.png)
 
   ### 相关设置
 
@@ -54,13 +54,13 @@
 
   登录节点的地址， 默认账号admin ，密码是 admin 
 
-  ![](F:\下载\sub-xui_RjcRJr\img\04.png)
+  ![](./img/04.png)
 
   ### 订阅转换
 
   拷贝上一步生成的节点去生成订阅转换 
 
-  ![](F:\下载\sub-xui_RjcRJr\img\05.png)
+  ![](./img/05.png)
 
   
 
