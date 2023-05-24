@@ -17,6 +17,8 @@ services:
     volumes:
       - ./conf:/usr/share/nginx/html/conf
     restart: always
+    ports:
+      - "18080:80"
     networks:
       - v2r
 
@@ -25,6 +27,8 @@ services:
     depends_on:
       - redis
     restart: always
+    ports:
+      - "8002:8002"
     networks:
       - v2r
 
@@ -33,6 +37,8 @@ services:
     volumes:
       - ./data/redis:/data
     restart: always
+    ports:
+      - "6379:6379"
     networks:
       - v2r
 
